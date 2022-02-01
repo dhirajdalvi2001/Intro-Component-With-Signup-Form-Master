@@ -237,8 +237,4 @@ footer {
     .right-lower-container h6 {
         width: 75%;
     }
-    footer {
-        position: absolute;
-        top: 970px;
-    }
 }

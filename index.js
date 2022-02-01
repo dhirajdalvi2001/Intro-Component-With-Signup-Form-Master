@@ -34,6 +34,7 @@ function validateForm() {
         setPlaceHolder("f_name");
         returnVal = false;
     } else {
+        fName.classList.remove("red");
         returnVal = true;
     }
     if (lName.value.length == 0) {
@@ -42,6 +43,7 @@ function validateForm() {
         setPlaceHolder("l_name");
         returnVal = false;
     } else {
+        lName.classList.remove("red");
         returnVal = true;
     }
     if (email.value.length == 0) {
@@ -50,6 +52,7 @@ function validateForm() {
         document.getElementsByName("email")[0].placeholder = "email@example/com";
         returnVal = false;
     } else {
+        email.classList.remove("red");
         returnVal = true;
     }
     if (password.value.length == 0) {
@@ -58,10 +61,8 @@ function validateForm() {
         setPlaceHolder("password");
         returnVal = false;
     } else {
+        password.classList.remove("red");
         returnVal = true;
     }
-
-
-
     return returnVal;
 }
