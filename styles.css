@@ -150,11 +150,13 @@ button:hover {
 }
 
 .terms {
+    text-align: center;
     font-style: normal;
     margin: 0.8rem auto;
     font-size: 0.55rem;
     font-weight: 500;
     color: hsl(246, 25%, 77%);
+    line-height: 1rem;
 }
 
 h6 span {
