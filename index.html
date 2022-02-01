@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main-container">
+            <div class="left-container">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+            </div>
+            <div class="right-container">
+                <div class="right-upper-container">
+                    <h3>Try it free 7 days <span> then $20/mo. thereafter</span></h3>
+                </div>
+                <div class="right-lower-container">
+                    <form id="form1" name="form1" onsubmit="return validateForm()" method="get">
+                        <input type="text" placeholder="First Name" id="f_name" name="f_name">
+
+                        <h6 class="form-error" id="fname-msg"></h6>
+
+                        <input type="text" placeholder="Last Name" id="l_name" name="l_name">
+
+                        <h6 class="form-error" id="lname-msg"></h6>
+
+                        <input type="email" placeholder="Email Address" id="email" name="email">
+
+                        <h6 class="form-error" id="email-msg"></h6>
+
+                        <input type="password" placeholder="Password" id="password" name="password">
+
+                        <h6 class="form-error" id="password-msg"></h6>
+
+                        <button type="submit">Claim your free trial </button>
+
+                        <h6 class="terms">By clicking the button, you are agreeing to our <span> Terms and Services</span></h6>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/dhirajdalvi2001">Dhiraj Dalvi</a>.
+            </p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

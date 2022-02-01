@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    margin: auto;
+    width: 64.5vw;
+    height: 90vh;
+    display: flex;
+}
+
+
+/* Left Container */
+
+.left-container {
+    margin: 2.4rem 0 0;
+    width: 51%;
+    height: 100%;
+}
+
+.left-container h1 {
+    width: 80%;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    margin: 10.8rem 0 0;
+}
+
+.left-container p {
+    margin-top: 1.4rem;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+
+/* Right Container */
+
+.right-container {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-upper-container {
+    margin: 2.4rem 0 1.2rem;
+    height: 3rem;
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.5rem;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.15);
+    display: flex;
+}
+
+.right-upper-container h3 {
+    margin: auto;
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.right-upper-container span {
+    margin: auto;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.right-lower-container {
+    background-color: #fff;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.15);
+}
+
+.right-lower-container form {
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 1rem;
+    padding: 0.9rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+    text-indent: 1rem;
+    outline: none;
+    caret-color: hsl(248, 32%, 49%);
+}
+
+input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+.red {
+    border: 2px solid #ff7a7a;
+    background-image: url(images/svg.svg);
+    background-repeat: no-repeat;
+    background-size: 2.1rem;
+    background-position: right;
+    background-position-x: 97%;
+}
+
+.red::placeholder {
+    color: #ff7a7a;
+}
+
+input::placeholder {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: hsl(154, 59%, 51%);
+    border: 0 solid;
+    box-shadow: 0 -2px 3px hsl(154, 53%, 37%) inset;
+    border-radius: 0.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.terms {
+    font-style: normal;
+    margin: 0.8rem auto;
+    font-size: 0.55rem;
+    font-weight: 500;
+    color: hsl(246, 25%, 77%);
+}
+
+h6 span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+form h6 {
+    margin: 0.2rem 0 0;
+    text-align: right;
+    font-size: 0.55rem;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    color: hsl(248, 32%, 49%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(248, 32%, 49%);
+}
+
+@media (min-width: 300px) and (max-width:750px) {
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+        background-repeat: no-repeat;
+    }
+    .main-container {
+        width: 84%;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .left-container {
+        margin-top: 1.6rem;
+        width: 100%;
+        height: 36vh;
+    }
+    .left-container h1 {
+        margin: 0 auto;
+        font-size: 1.7rem;
+    }
+    .left-container p {
+        font-size: 0.9rem;
+        width: 95%;
+        line-height: 1.5rem;
+    }
+    .right-container {
+        width: 100%;
+        height: 75vh;
+    }
+    .right-upper-container {
+        padding: 1.5rem 0;
+        width: 100%;
+        margin-bottom: 1.4rem;
+    }
+    .right-upper-container h3 {
+        font-size: 1rem;
+        width: 60%;
+    }
+    .right-lower-container form {
+        margin: 1.5rem;
+    }
+    input {
+        text-indent: 0;
+    }
+    .right-lower-container h6 {
+        width: 75%;
+    }
+    footer {
+        position: absolute;
+        top: 970px;
+    }
+}
